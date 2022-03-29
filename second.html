@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Medication Prescription portal</title>
+    <style>
+        #hello{
+            position: relative;
+            width: 5400px;
+            animation-name: slideranimation;
+            animation-duration: 20s;
+            animation-iteration-count: infinite;
+            margin-top: -1px;
+
+        }
+        #hello img{
+            float: left;
+            width: 1513px;
+            height: 433px;
+        }
+@keyframes slideranimation{
+    0%{
+        left: 0px;
+    }
+    20%{
+        left: 0px;
+    }
+    25%{
+        left: -1513px;
+    }
+    45%{
+        left: -1513px;
+    }
+    60%{
+        left: -3026px;
+    }
+    80%{
+        left: -3026px;
+    }
+
+    
+ }
+.ee{
+    margin-left: -5px;
+    margin-right: -8px;
+    padding-top: 21px;
+    text-align: center;
+    margin-top: 1px;
+    font-family: Impact, fantasy;
+    font-size: 20px;
+    
+}
+button{
+    margin-left: 700px;
+    padding: 6px;
+    background-color: orangered;
+    border: none;
+    border-radius: 5px;
+
+}
+#op{
+    background-color:black;
+    border: solid;
+    text-align: center;
+    font-family: Impact, fantasy;
+    font-size: 34px;
+    color: white;
+    margin-left: -12px;
+    margin-right: -12px;
+    margin-top: -12px;
+    padding: 10px;
+}
+#bad{
+    background-color: black;
+    border:solid;
+    margin-top: 435px;
+    margin-left: -170px;
+    margin-right: -160px;
+    text-align: center;
+    padding: 10px;
+    color: white;
+    font-family: Impact, fantasy;
+    font-size: 40px;
+}
+
+.btn:hover{
+    color: brown;
+    background-color: rgb(233, 191, 101);
+
+}
+.btn{
+    background-color: rgb(144, 225, 231);
+    cursor: pointer;
+}
+a{
+    text-decoration: none;
+    color: rgb(5, 5, 5);
+}
+a:hover{
+    color: rgb(104, 107, 107);
+}
+a:active{
+    background-color: darkgreen;
+}
+        
+    </style>
+</head>
+<body>
+    <div id="op">MEDICATION PRESCRIPTION PORTAL</div>
+    <div id="hello">
+        <img src="https://www.wellmo.com/wp-content/uploads/2020/03/kuva-uutiseen.jpg" class="ab">
+        <img src="https://wallpaperaccess.com/full/624111.jpg" class="bc">
+        <img src="https://i.pinimg.com/736x/05/30/26/053026334c7f11be0fba9924ff8aa100.jpg" class="de">
+
+    </div>
+    <div class="xy">
+        <div id="bad">DETAILS</div>
+        <div class="ee">
+        <p >Staff count :</p><p id="yy">120</p>
+        <div class="kk">
+            <p >Patients visited today:</p>
+            <p id="zz">145</p>
+        </div>
+        <div class="mm">
+            <p >Prescriptions : </p>
+            <p id="uu">121</p>
+        </div>
+        <div class="vv">
+            <p>No of people taken appoinment</p>
+            <p id="ii"></p>
+        </div>
+        </div>
+
+        <button class="btn"><a href="third.html">Prescription</a></button>
+        <script>
+            let b=document.getElementById("ii");
+            let a=document.getElementById("uu");
+            let c=document.getElementById("zz");
+            
+            let up=setInterval(good,30000);
+            let dub=setInterval(bad,11000);
+            let cup=setInterval(hood,9000);
+            console.log(b);
+            console.log(a);
+            console.log(c);
+            
+           function good(){
+                let g=b.innerHTML;
+                 g++;
+                 b.innerHTML=g;
+                 alert("New appoinment");
+
+            }
+            function bad(){
+                 let h=a.innerHTML;
+                 h++
+                a.innerHTML=h;
+            }
+            function hood(){
+                let j=c.innerHTML;
+                j++;
+                c.innerHTML=j;
+            }
+
+        
+            </script>
+
+        </body>
+
+</html>

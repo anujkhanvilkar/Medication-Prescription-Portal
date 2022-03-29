@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html>
+    <head>
+<title>
+    Medication prescription portal
+</title>
+<style>
+    body{
+        background-color: rgb(118, 224, 238);
+        background-image: url("https://img.freepik.com/free-photo/doctor-stethoscope-lies-table-close-up-top-view_102583-4483.jpg?size=626&ext=jpg");
+        background-repeat: no-repeat;
+        background-size: 1530px;
+    }
+.jj{
+    margin-top: -80px;
+    text-align: center;
+    padding: 37px;
+}
+#aa{
+    padding: 10px;
+    text-align: center;
+}
+#kk{
+    padding: 10px;
+    text-align: center;
+}
+#hh{
+    padding: 10px;
+    text-align: center;
+    margin-left: -74px;
+}
+#bb{
+    padding: 10px;
+    text-align: center;
+}
+#ll{
+    padding: 10px;
+    text-align: center;
+}
+#xx{
+    padding: 10px;
+    text-align: center;
+}
+#kam{
+    padding: 10px;
+    text-align: center;
+    margin-left: -6px;
+}
+#hud{
+    padding: 10px;
+    text-align: center;
+}
+#koo{
+    width: 40%;
+}
+#com{
+    width: 40%;
+}
+#MOM{
+    width: 40%;
+    margin-left: 29px;
+
+}
+.wk{
+    padding: 10px;
+    text-align: center;
+}
+.xy{
+    padding: 10px;
+    text-align: center;
+}
+#my{
+width: 4%;
+}
+#op{
+width: 12%;
+}
+#ny{
+width: 8%;
+}
+img{
+    border-radius: 120px;
+    width: 10%;
+    margin-top: -10px;
+    margin-left: 20px;
+}
+#mmm{
+    margin-left: 1110px;
+    padding: 11px;
+    font-size: 30px;
+    font-family: 'Times New Roman', Times, serif;
+}
+</style>
+</head>
+<body>
+    <span id="mmm">
+        Dr. XYZ XYZ 
+    </span>
+    <div id="nnn">
+        <img src="data:image/png;base64,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" id="img">
+    </div>
+    <div class="jj">
+    <form action="hello.php">
+<div id="aa">
+    NAME: <input type="text" name="myname" id="hom">
+</div>
+<br>
+<div id="kk">
+    EMAIL ID: <input type="text" name="myname" id="bom">
+</div>
+<br>
+<div id="hh">
+    DATE: <input type="date" name="mydate"  id="gom">
+</div>
+<br>
+<div class="wk">
+    AGE: <input type="number" name="myage" id="mok">
+</div>
+<br>
+<div class="bb">
+    GENDER: <input class="gender" type="radio" name="mygender" value="male">MALE
+    <input class="gender" type="radio" name="mygender" value="female">FEMALE
+    <input class="gender" type="radio" name="mygender" value="other">OTHER
+</div>
+<br>
+<div class="xy">
+    ALLERGY: <input type="text" name="myallergy" id="xox">
+</div>
+<br>
+<div id="ll">
+    MEDICINES: <textarea name="mytext" cols="10" rows="4" id="com"></textarea>
+    <br>
+    <span id="xx">
+        TIMING: <textarea name="mytext" cols="10" rows="4" id="MOM"></textarea>
+    </span>
+</div>
+<br>
+<div id="kam">
+    NOTE: <textarea name="mytext" cols="10" rows="1" id="koo"></textarea>
+</div>
+ <div id="hud">
+     <input type="button" value="submit" id="yup" onclick="insert()">
+     <input type="reset" value="reset">
+     <input type="button"  value="history" onclick="hide()">
+ </div>
+<br><br>
+<div id="joke"></div>
+</form>
+</div>
+<div>
+<table border="2" cellspacing="18" cellpadding="20" id="tab">
+    <tr>
+        <th id="my">Sr. No<./th>
+        <th id="op">Name</th>
+        <th id="op">Emai id</th>
+        <th id="ny">Date</th>
+        <th id="ny">Age</th>
+        <th id="ny">Gender</th>
+        <th id="op">Allergy</th>
+        <th id="op">Medicines</th>
+        <th id="op">Time</th>
+        <th id="op">Note</th>
+    </tr>
+    <tbody id="root">
+    </tbody>
+</table>
+</div>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://smtpjs.com/v3/smtp.js">
+</script>
+<script>
+    var i=0;
+    var  vrr;
+    var ko=0;
+    var yo=1;
+    var name;
+    var email;
+    var medicines;
+    var time;
+    var note;
+    function insert(){
+        ko++;
+        yo++
+        data();
+        entry();
+        sendmail();
+    }
+    function data(){
+let rate_value;
+let x=document.getElementById('xox').value;
+let h=document.getElementById('mok').value;
+let g=document.getElementById('koo').value;
+let f=document.getElementById('MOM').value;
+let e=document.getElementById('com').value;    
+ let d=document.querySelector('input[name = mygender]:checked').value;
+let c=document.getElementById('gom').value;
+let a=document.getElementById('hom').value;
+let b=document.getElementById('bom').value;
+let xrr=JSON.parse(localStorage.getItem('xoom'));
+let hrr=JSON.parse(localStorage.getItem('hoom'));
+let grr=JSON.parse(localStorage.getItem('foom'));
+let frr=JSON.parse(localStorage.getItem('eoom'));
+let err=JSON.parse(localStorage.getItem('doom'));
+let drr=JSON.parse(localStorage.getItem('coom'));
+let crr=JSON.parse(localStorage.getItem('boom'));
+let arr=JSON.parse(localStorage.getItem('hello'));
+let brr=JSON.parse(localStorage.getItem('blow'));
+if(arr==null && brr==null && crr==null && drr==null && err==null && frr==null && grr==null && hrr==null && xrr==null){
+    let bata=[b];
+    let hata=[a];
+    let cata=[c];
+    let gata=[d];
+    let fata=[e];
+    let iata=[f];
+    let eata=[g];
+    let kata=[h];
+    let xata=[x];
+    localStorage.setItem('xoom',JSON.stringify(xata));
+    localStorage.setItem('hoom',JSON.stringify(kata));
+    localStorage.setItem('foom',JSON.stringify(eata));
+    localStorage.setItem('eoom',JSON.stringify(iata));
+    localStorage.setItem('doom',JSON.stringify(fata));
+    localStorage.setItem('coom',JSON.stringify(gata));
+    localStorage.setItem('boom',JSON.stringify(cata));
+    localStorage.setItem('blow',JSON.stringify(bata));
+    localStorage.setItem('hello',JSON.stringify(hata));
+}
+else{
+    xrr.push(x);
+    hrr.push(h);
+    grr.push(g);
+    frr.push(f);
+    err.push(e);
+    drr.push(d);
+    crr.push(c);
+    brr.push(b);
+    arr.push(a);
+    localStorage.setItem('xoom',JSON.stringify(xrr));
+    localStorage.setItem('hoom',JSON.stringify(hrr));
+    localStorage.setItem('foom',JSON.stringify(grr));
+    localStorage.setItem('eoom',JSON.stringify(frr));
+    localStorage.setItem('doom',JSON.stringify(err));
+    localStorage.setItem('coom',JSON.stringify(drr));
+    localStorage.setItem('boom',JSON.stringify(crr));
+    localStorage.setItem('blow',JSON.stringify(brr));
+    localStorage.setItem('hello',JSON.stringify(arr));
+}
+    }
+    function entry(){
+        let html='';
+let xrr=JSON.parse(localStorage.getItem('xoom'));
+let hrr=JSON.parse(localStorage.getItem('hoom'));
+let grr=JSON.parse(localStorage.getItem('foom'));
+let frr=JSON.parse(localStorage.getItem('eoom'));
+let err=JSON.parse(localStorage.getItem('doom'));
+let drr=JSON.parse(localStorage.getItem('coom'));
+let crr=JSON.parse(localStorage.getItem('boom'));
+let arr=JSON.parse(localStorage.getItem('hello'));
+let brr=JSON.parse(localStorage.getItem('blow'));
+let no=1;
+for(let k in arr){
+    html=html+
+    `<tr><td>${no}</td><td>${arr[k]}</td><td>${brr[k]}</td><td>${crr[k]}</td><td>${hrr[k]}</td><td>${drr[k]}</td><td>${xrr[k]}</td><td>${err[k]}</td><td>${frr[k]}</td><td>${grr[k]}</td></tr>`;
+no++;
+    }
+document.getElementById('root').innerHTML=html;
+    }
+    function sendmail(ko,yo){
+let xrr=JSON.parse(localStorage.getItem('xoom'));
+let hrr=JSON.parse(localStorage.getItem('hoom'));
+let grr=JSON.parse(localStorage.getItem('foom'));
+let frr=JSON.parse(localStorage.getItem('eoom'));
+let err=JSON.parse(localStorage.getItem('doom'));
+let drr=JSON.parse(localStorage.getItem('coom'));
+let crr=JSON.parse(localStorage.getItem('boom'));
+let arr=JSON.parse(localStorage.getItem('hello'));
+let brr=JSON.parse(localStorage.getItem('blow'));
+console.log(brr);
+let no=1;
+localStorage.setItem('oom',JSON.stringify(brr[i]));
+console.log(localStorage.getItem('oom'));
+i++;
+        arr.reverse();
+        console.log(arr);
+        brr.reverse();
+        console.log(brr);
+        crr.reverse();
+        console.log(crr);
+        drr.reverse();
+        console.log(drr);
+        err.reverse();
+        console.log(err);
+        frr.reverse();
+        console.log(frr);
+        grr.reverse();
+        console.log(grr);
+        hrr.reverse();
+        console.log(hrr);
+        xrr.reverse();
+        console.log(xrr);
+Email.send({
+    Host : "smtp.gmail.com",
+    Username : "medical0377@gmail.com",
+    Password : "gppnrtyekafmswxf",
+    To : JSON.parse(localStorage.getItem('oom')),
+    From : "medical0377@gmail.com",
+    Subject : "MEDICAL PRESCRIPTION",
+    Body : " NAME:-  "+(arr[0])+" , "+ "  AGE:-  "+(hrr[0])+" , "+ "  ALLERGY:-  "+(xrr[0])+" , "+ "  MEDICINES:-  "+(err[0])+" , "+ "  TIMMING:-  "+(frr[0])+" , "+ "  NOTE:-  "+(grr[0])+" , "+ "  BY DR. ANUJ KHANVILKAR(MPP HOSPITAL)  ",
+}).then(
+  message => alert("mail sent")
+);
+empty();
+    }
+    function empty(){
+        vrr=[];
+        localStorage.removeItem('oom');
+    }
+    
+function hide(){
+   let x= document.getElementById("tab");
+   if (x.style.display === "none") {
+    x.style.display = "block";
+  } else {
+    x.style.display = "none";
+  }
+}
+
+</script>
+</body>
+</html>
